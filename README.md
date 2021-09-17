@@ -1,9 +1,9 @@
 # TC1001S.600 - Proyecto
 Materia: Herramientas computacionales: el arte de la programación
 
-Evidencia de competencias/proyecto: Videojuego 2D
+Evidencia de competencias/proyecto: Videojuegos 2D
 
-Descripción: El objetivo del proyecto es desarrollar, elaborar y completar/extender diversos juegos, mismo que forman parte de la colección de Free Python Games con el fin de demostrar el desarrollo de la subcompetencia SING0401A.
+Descripción: El objetivo del proyecto es desarrollar, elaborar y completar/extender diversos juegos, mismos que forman parte de la colección de Free Python Games con el fin de demostrar el desarrollo de la subcompetencia SING0401A.
 
 # Estudiantes
 
