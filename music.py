@@ -12,6 +12,8 @@ Giorno3 = ['F#', 'F#', 'B', 'B', 'C#', 'D', 'G', 'F#', 'F', 'A#']
 Giorno4 = ['F#', 'F#', 'B', 'B', 'C#', 'D', 'E', 'D', 'F#']
 
 st = stream.Stream()
+
+# Ciclo for para la repetición de notas
 for i in range(10):
     G = Giorno1[i]
     N = note.Note(G)
@@ -48,5 +50,6 @@ for i in range(9):
     N.duration.quarterLength = 1
     st.append(N)
 
+# Descargara archivo mid
 st.write('midi', fp="Ej3.mid")
 # files.download("Ej3.mid")

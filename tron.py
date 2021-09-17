@@ -2,6 +2,13 @@
 Tron, classic arcade game. [Modified]
 Name: Ana Karen López Baltazar - A01707750
 Date: 17/09/2021
+
+Exercises
+
+1. Make the tron players faster/slower.
+2. Stop a tron player from running into itself.
+3. Allow the tron player to go around the edge of the screen.
+4. How would you create a computer player?
 """
 
 from turtle import setup, title, bgcolor, hideturtle, ontimer
