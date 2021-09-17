@@ -1,21 +1,20 @@
 """
-Tron, classic arcade game.
-
-Exercises
-
-3. Allow the tron player to go around the edge of the screen.
-4. How would you create a computer player?
+Tron, classic arcade game. [Modified]
+Name: Ana Karen López Baltazar - A01707750
+Date: 17/09/2021
 
 """
 
-from turtle import *
+from turtle import setup, title, bgcolor, hideturtle, ontimer
+from turtle import tracer, listen, onkey, done, update
 from freegames import square, vector
 from random import randint
-#from threading import Thread
-#from playsound import playsound
-from pygame import mixer
 
-#playsound('giorno.mp3')
+# from threading import Thread
+# from playsound import playsound
+# from pygame import mixer
+
+# playsound('giorno.mp3')
 
 p1xy = vector(-100, 0)
 p1aim = vector(4, 0)
@@ -25,25 +24,25 @@ p2xy = vector(100, 0)
 p2aim = vector(-4, 0)
 p2body = set()
 
+
 def inside(head):
     "Return True if head inside screen."
     return -200 < head.x < 200 and -200 < head.y < 200
+
 
 def draw():
     "Advance players and draw game."
     p1xy.move(p1aim)
     p1head = p1xy.copy()
-    
+    p2xy.move(p2aim)
+    p2head = p2xy.copy()
+
     change = randint(0, 9)
     if change == 0:
         p2aim.rotate(90)
     elif change == 1:
         p2aim.rotate(-90)
 
-    p2xy.move(p2aim)
-    p2head = p2xy.copy()
-
-# -------------------------------------------   
     if not inside(p1head) or p1head in p2body:
         print('Player violet wins!')
         return
@@ -51,7 +50,7 @@ def draw():
     if not inside(p2head) or p2head in p1body:
         print('Player gold wins!')
         return
-    
+
     if not inside(p1head) or p1head in p1body:
         print('Player gold wins!')
         return
@@ -59,7 +58,6 @@ def draw():
     if not inside(p2head) or p2head in p2body:
         print('Player violet wins!')
         return
-# -------------------------------------------   
 
     p1body.add(p1head)
     p2body.add(p2head)
@@ -68,27 +66,25 @@ def draw():
     square(p2xy.x, p2xy.y, 3, 'gold')
     update()
     ontimer(draw, 50)
-    
-# -------------------------------------------    
+
 # Función para abrir archivo de música
-#def music_func():
+# def music_func():
 #    playsound('cancion.mp3')
-    
 
 # Definir función que llama audio
-#music = Thread(target=music_func)
-#music.daemon = True
+# music = Thread(target=music_func)
+# music.daemon = True
 
 # mixer.init()
 # mixer.music.load("giorno.mp3")
 # mixer.music.play()
 
-#music = mixer.music.load('giorno.mp3')
-#mixer.music.play(loops=-1)
+# music = mixer.music.load('giorno.mp3')
+# mixer.music.play(loops=-1)
 
 # Iniciar musica
-#music.start()
-# -------------------------------------------  
+# music.start()
+
 
 setup(420, 420, 370, 0)
 title("Tron")
@@ -96,9 +92,7 @@ bgcolor("black")
 hideturtle()
 tracer(False)
 listen()
-onkey(lambda: p1aim.rotate(90), 'Up')
 onkey(lambda: p1aim.rotate(90), 'Left')
 onkey(lambda: p1aim.rotate(-90), 'Right')
-onkey(lambda: p1aim.rotate(-90), 'Down')
 draw()
 done()
