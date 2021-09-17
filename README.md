@@ -1,2 +1,4 @@
 # TC1001S.600
-Herramientas computacionales: Arte de la programación (Sept 2021)
+Estudiantes: 
+Ana Karen López Baltazar - A01707750
+Xavier Alfonso Barrera Ruiz - A01702869
