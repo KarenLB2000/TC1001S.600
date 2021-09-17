@@ -3,7 +3,7 @@ Materia: Herramientas computacionales: el arte de programación
 
 Evidencia de competencias/proyecto: Videojuego 2D
 
-# Estuadiantes
+# Estudiantes
 
 Ana Karen López Baltazar - A01707750
 
