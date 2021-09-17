@@ -15,12 +15,8 @@ from turtle import setup, title, bgcolor, hideturtle, ontimer
 from turtle import tracer, listen, onkey, done, update
 from freegames import square, vector
 from random import randint
-
-# from threading import Thread
-# from playsound import playsound
-# from pygame import mixer
-
-# playsound('giorno.mp3')
+from playsound import playsound
+from threading import Thread
 
 p1xy = vector(-100, 0)
 p1aim = vector(4, 0)
@@ -75,24 +71,17 @@ def draw():
     update()
     ontimer(draw, 50)
 
+
 # Función para abrir archivo de música
-# def music_func():
-#    playsound('cancion.mp3')
+def music_func():
+    playsound('giorno.mp3')
 
 # Definir función que llama audio
-# music = Thread(target=music_func)
-# music.daemon = True
-
-# mixer.init()
-# mixer.music.load("giorno.mp3")
-# mixer.music.play()
-
-# music = mixer.music.load('giorno.mp3')
-# mixer.music.play(loops=-1)
+music = Thread(target=music_func)
+music.daemon = True
 
 # Iniciar musica
-# music.start()
-
+music.start()
 
 # Interfaz + Controles de Player1
 setup(420, 420, 370, 0)

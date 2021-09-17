@@ -18,37 +18,37 @@ st = stream.Stream()
 for i in range(10):
     G = Giorno1[i]
     N = note.Note(G)
-    N.duration.quarterLength = 1
+    N.duration.quarterLength = 0.7
     st.append(N)
 
 for i in range(10):
     G = Giorno2[i]
     N = note.Note(G)
-    N.duration.quarterLength = 1
+    N.duration.quarterLength = 0.7
     st.append(N)
 
 for i in range(10):
     G = Giorno1[i]
     N = note.Note(G)
-    N.duration.quarterLength = 1
+    N.duration.quarterLength = 0.7
     st.append(N)
 
 for i in range(10):
     G = Giorno3[i]
     N = note.Note(G)
-    N.duration.quarterLength = 1
+    N.duration.quarterLength = 0.7
     st.append(N)
 
 for i in range(10):
     G = Giorno1[i]
     N = note.Note(G)
-    N.duration.quarterLength = 1
+    N.duration.quarterLength = 0.7
     st.append(N)
 
 for i in range(9):
     G = Giorno4[i]
     N = note.Note(G)
-    N.duration.quarterLength = 1
+    N.duration.quarterLength = 0.7
     st.append(N)
 
 # Descarga del archivo mid
