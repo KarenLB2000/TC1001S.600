@@ -1,5 +1,5 @@
 # TC1001S.600
-Estudiantes: 
+Alumnos: 
 
 Ana Karen López Baltazar - A01707750
 
