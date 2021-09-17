@@ -6,6 +6,7 @@ Date: 17/09/2021
 
 from music21 import note, stream
 
+# Notas de la canción
 Giorno1 = ['F#', 'D', 'D', 'E', 'F', 'E', 'D', 'C#', 'D', 'E']
 Giorno2 = ['F#', 'F#', 'B', 'C#', 'D', 'E', 'D', 'C#', 'A', 'G']
 Giorno3 = ['F#', 'F#', 'B', 'B', 'C#', 'D', 'G', 'F#', 'F', 'A#']
@@ -50,6 +51,6 @@ for i in range(9):
     N.duration.quarterLength = 1
     st.append(N)
 
-# Descargara archivo mid
+# Descarga del archivo mid
 st.write('midi', fp="Ej3.mid")
 # files.download("Ej3.mid")

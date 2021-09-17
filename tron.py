@@ -32,23 +32,25 @@ p2body = set()
 
 
 def inside(head):
-    "Return True if head inside screen."
+    # Determinar si el jugador está dentro de la pantalla
     return -200 < head.x < 200 and -200 < head.y < 200
 
 
 def draw():
-    "Advance players and draw game."
+    # Dibujo y movimiento de los jugadores
     p1xy.move(p1aim)
     p1head = p1xy.copy()
     p2xy.move(p2aim)
     p2head = p2xy.copy()
 
+    # Movimiento de Player2
     change = randint(0, 9)
     if change == 0:
         p2aim.rotate(90)
     elif change == 1:
         p2aim.rotate(-90)
 
+    # Colisión y condiciones de victoria
     if not inside(p1head) or p1head in p2body:
         print('Player violet wins!')
         return
@@ -92,6 +94,7 @@ def draw():
 # music.start()
 
 
+# Interfaz + Controles de Player1
 setup(420, 420, 370, 0)
 title("Tron")
 bgcolor("black")
