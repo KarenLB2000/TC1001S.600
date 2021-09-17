@@ -10,3 +10,7 @@ Descripción: El objetivo del proyecto es desarrollar, elaborar y completar/exte
 Ana Karen López Baltazar - A01707750
 
 Xavier Alfonso Barrera Ruiz - A01702869
+
+# Videojuegos y música
+Para jugar cualquiera de los videojuegos:
+python videojeugo.py
