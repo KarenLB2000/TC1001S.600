@@ -2,7 +2,6 @@
 Tron, classic arcade game. [Modified]
 Name: Ana Karen López Baltazar - A01707750
 Date: 17/09/2021
-
 """
 
 from turtle import setup, title, bgcolor, hideturtle, ontimer
