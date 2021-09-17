@@ -13,4 +13,9 @@ Xavier Alfonso Barrera Ruiz - A01702869
 
 # Videojuegos y música
 Para jugar cualquiera de los videojuegos:
-python videojeugo.py
+python videojuego.py
+
+Para generar la música:
+python music.py
+
+Téngase en cuenta que este último generará un archivo 'mid'. Se incluye en el respositoria la conversión de dicho archivo a 'mp3'.
