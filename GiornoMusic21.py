@@ -5,7 +5,7 @@ Name: Ana Karen López Baltazar - A01707750
 Date: 17/09/2021
 """
 
-from music21 import note, stream, tempo
+from music21 import note, stream
 
 # Arreglo de arreglos con notas de la canción
 # [Nota, Tiempo]

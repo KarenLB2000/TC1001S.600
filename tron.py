@@ -76,6 +76,7 @@ def draw():
 def music_func():
     playsound('GiornoTheme.mp3')
 
+
 # Definir función que llama audio
 music = Thread(target=music_func)
 music.daemon = True
