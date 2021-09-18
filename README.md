@@ -16,6 +16,6 @@ Para jugar cualquiera de los videojuegos:
 python videojuego.py
 
 Para generar la música:
-python music.py
+python GiornoMusic21.py
 
-Téngase en cuenta que este último generará un archivo 'mid'. Se incluye en el respositoria la conversión de dicho archivo a 'mp3'.
+Téngase en cuenta que este último generará un archivo 'mid'. Se incluye en el respositorio la conversión de dicho archivo a 'mp3'.
