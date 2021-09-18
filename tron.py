@@ -74,7 +74,7 @@ def draw():
 
 # Función para abrir archivo de música
 def music_func():
-    playsound('giorno.mp3')
+    playsound('Giorno.mp3')
 
 # Definir función que llama audio
 music = Thread(target=music_func)
