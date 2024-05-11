@@ -1,21 +1,18 @@
-# TC1001S.600 - Proyecto
-Materia: Herramientas computacionales: el arte de la programación
+# Project: 2D Video Games
+## Course: Computational Tools: The Art of Programming
 
-Evidencia de competencias/proyecto: Videojuegos 2D
+### Description
+An archive of 2D game projects developed as part of the Free Python Games collection, demonstrating expertise in game development and programming.
 
-Descripción: El objetivo del proyecto es desarrollar, elaborar y completar/extender diversos juegos, mismos que forman parte de la colección de Free Python Games, con el fin de demostrar el desarrollo de la subcompetencia SING0401A.
+### Students
+- Ana Karen López Baltazar - A01707750
+- Xavier Alfonso Barrera Ruiz - A01702869
 
-# Estudiantes
+### Games and Music
+To play any of the games: `python videojuego.py`
 
-Ana Karen López Baltazar - A01707750
+To generate music: `python GiornoMusic21.py`
 
-Xavier Alfonso Barrera Ruiz - A01702869
+Please note that the latter will generate a 'mid' file. A conversion of this file to 'mp3' is included in the repository.
 
-# Videojuegos y música
-Para jugar cualquiera de los videojuegos:
-python videojuego.py
-
-Para generar la música:
-python GiornoMusic21.py
-
-Téngase en cuenta que este último generará un archivo 'mid'. Se incluye en el respositorio la conversión de dicho archivo a 'mp3'.
+**(Note: The code is documented in Spanish)**
